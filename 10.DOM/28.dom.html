@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Manipulando el DOM con JS</h1>
+    <p>EL poder del DOM</p>
+   <div id="micaja">!Hello world¡</div>
+   <div id="micaja2">!Hello world 2¡</div>
+   <div id="micajas">!Hello world 3¡</div>
+    <script>
+        /*
+        DOM Document Object Model
+          Mediante Js podemos manipular los elemntos HTML de una página
+        */
+  // conseguir elementos único por ID
+     // var caja =  document.getElementById("micaja")
+     var caja= document.querySelector("#micaja") //almohadilla por que es un id
+      caja.innerHTML="Hola Mundo"
+      caja.style.color="white"
+      caja.style.padding="20px"
+      caja.className="hola"
+      
+
+    function cambiaColor(color){
+        caja.style.background=color
+    }
+    
+    cambiaColor("green")
+
+    // conseguir elementos por su etiqueta
+
+    var todoslosdiv = document.getElementsByTagName('div');
+    todoslosdiv[1].style.backgroundColor="grey"
+
+    //conseguir elementos por su clase
+
+ document.querySelector("#micajas").style.color="red"
+    </script>
+</body>
+</html>

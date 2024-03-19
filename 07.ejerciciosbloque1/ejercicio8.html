@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        /*  hacer una calculadora:
+             - Pida por pantalla dos numeros
+             -si metemos mal los numeros que nos lo vuelva a pedir
+             -en el cuerpo de la página, en una alerta  por consola el resultado de 
+             sumar, restar, multiplicar y dividir esas dos cifras
+        */
+
+        var num1 = parseInt(prompt("Introduce un numero"));
+        var num2 = parseInt(prompt("Introduce otro número"));
+
+
+      while(num1 <= 0 || num2 <= 0 || isNaN(num1) || isNaN(num2)){
+         num1 = parseInt(prompt("Introduce un numero"));
+         num2 = parseInt(prompt("Introduce otro número"));
+      }
+
+      var resultado = "la suma es : "+(num1+num2)+"<br>"+
+                      " la resta es : "+(num1-num2)+"<br>"+
+                      "la multiplicacion es : "+(num1*num2)+"<br>"+
+                      "la division es : "+(num1%num2)+"<br>"
+
+    document.write(resultado)
+    //Mostra el resultado en consola y alert
+
+    var resultadoalert = "la suma es : "+(num1+num2)+"\n"+ //la barra N nos da un salto de linea en alert y consola
+                      " la resta es : "+(num1-num2)+"\n"+
+                      "la multiplicacion es : "+(num1*num2)+"\n"+
+                      "la division es : "+(num1%num2)+"\n"
+alert(resultadoalert)
+console.log(resultadoalert)
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones texto</title>
+</head>
+<body>
+    <script>
+        //transformacion de texto
+
+        var  numero = 444;
+        var texto1 ="Hello world and the space";
+        var texto2 ="ANTONIO"
+
+       var dato= numero.toString();
+       var datos= texto1.toUpperCase(); // convertir todo a mayusculas
+       var dat= texto2.toLowerCase(); //convertir todo a minusculas
+       document.write(dato)
+       document.write("<br>"+datos)
+       document.write("<br>"+dat)
+
+       //calcular longitud de un texto con .length
+
+       var nombre = "Antonio";
+       document.write("<br>"+nombre.length)
+       
+       // Buscar una palabra con el metodo indexof
+       
+       var busqueda = texto1.indexOf("and")
+       document.write("<br>"+busqueda)
+
+       //metodo match
+       var encontrar =texto1.match("o")
+       document.write("<br>"+encontrar)
+    </script>
+</body>
+</html>

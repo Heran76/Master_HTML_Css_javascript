@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_4</title>
+    <style>
+        body{
+            height: 100vh;
+             margin-top: 50px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(228, 224, 224);
+            color:grey;
+            font-size: 1.5em;      
+        }
+    </style>
+</head>
+<body>
+     <script>
+      var num1 = parseInt(prompt("introduce un primer número"));
+      var num2 = parseInt(prompt("Introduce un segundo número"));
+
+      while(num1 < num2){
+        num1++
+        if(num1%2 != 0){
+            document.write("el numero "+num1+ " es impar <br>");
+        }
+      }
+     </script>
+</body>
+</html>

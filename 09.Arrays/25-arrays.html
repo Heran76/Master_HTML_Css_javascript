@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays basico</title>
+</head>
+<body>
+    <script>
+        //arrays, arreglos, matrices = coleccion de datos de contiene una variable
+        var nombre = "Antonio Heredia"
+        var nombres =["Marcos","Antonio","Jose","Lucia"]
+
+        var lenguajes = new Array("PHP","js","HTML")
+
+        document.write(lenguajes[1]);
+        document.write("<br>");
+        document.write(nombres.length); //propiedad para saber cuantos elementos hay en una array
+    
+        //ejercicio
+    
+    var elemento = parseInt(prompt("Que elemento del array quieres ?"))
+    
+    if(elemento >= nombres.length){
+        alert("Introduce el número menor que "+nombres.length);
+    }else{
+        alert("El usuario selecciona es "+nombres[elemento]);
+    }
+    
+    </script>
+</body>
+</html>

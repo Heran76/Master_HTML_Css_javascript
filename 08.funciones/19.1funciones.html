@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <script>
+        function calculadora(num1, num2){
+          //conjunto de instruciones a ejecutar.
+          document.write("Suma : "+(num1+num2)+"<br>"); 
+          document.write("Resta : "+(num1-num2)+"<br>"); 
+          document.write("Multiplicar : "+(num1*num2)+"<br>");
+          document.write("Dividir : "+(num1/num2)+"<br>");
+          document.write("***************************"+"<br>")
+        }
+        //calculadora(2,3)
+       // calculadora(10,253)
+
+       for(var i = 1; i<=10; i++){
+        document.write(i+"<br>")
+        calculadora(i,25)
+       }
+         
+
+    </script>
+</body>
+</html>

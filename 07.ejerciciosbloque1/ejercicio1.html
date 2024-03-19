@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio-1</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(228, 224, 224);
+            color:grey;
+            font-size: 1.5em;
+
+
+            
+        }
+    </style>
+</head>
+<body>
+     <script>
+     /* hacer un programa que nos pida dos numeros que nos diga cual es el mayor 
+     el menor y si son igual ejercio plus : que si los numero no son un numero o menor a o que pida el numero*/
+    
+   var num1 = parseInt(prompt("introduce el primer número",0));
+   var num2 = parseInt(prompt("Introduce el segundo número",0))
+
+   while(num1 <= 0 || num2 <= 0 || isNaN(num1)|| isNaN(num2)){
+    num1 = parseInt(prompt("introduce el primer número",0));
+    num2 = parseInt(prompt("Introduce el segundo número",0))
+   }
+ 
+    if(num1<num2){
+        document.write("el numero "+num1+ " es menor que "+num2)
+    }else if(num1>num2){
+        document.write("el numero "+num1+" es mayor que "+num2)
+    }else{
+        document.write("los numeros son iguales")
+    }
+</script>
+</body>
+</html>

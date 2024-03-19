@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorrer una array</title>
+</head>
+<body>
+    <script>
+        var nombre = "Antonio Heredia"
+        var nombres =["Marcos","Antonio","Jose","Lucia"]
+        var lenguajes = new Array("PHP","js","HTML","Python")
+        document.write("<h1>Lenguajes de promacion</h1>")
+       
+        /*for(var i = 0; i<lenguajes.length; i++ ){
+            document.write("<li>"+lenguajes[i]+"</li>");
+        }*/
+
+        // forEach
+
+        lenguajes.forEach((elemento,indice)=>{
+              document.write("<li>"+indice+"-"+elemento+"</li>");
+        })
+
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Array</title>
+</head>
+<body>
+ <script>
+       /*
+    1. Pida 6 numeros por pantalla y los meta en un Array
+    2. Mostrar el array entero (todos sus elementos) en el cuerpo de la página y en la consola
+    3. Ordenarlo y mostralo
+    4. invertir su orden y mostralo
+    5. Mostrar cuantos elementos tiene el Array
+    6. Busqueda de un valor introducido por el usuario. que nos diga si lo encuentra y su indice
+    (se valorará el uso de funciones)
+    */
+function monstraArray(elementos, textoCustom=""){
+    document.write("<h1>Numeros array"+textoCustom+"</h1>")
+    document.write("<ul")
+numeros.forEach((numero, index)=>{
+    document.write("<li>"+elementos+"</li>") 
+}); 
+ document.write("</ul>");
+}
+
+ var numeros = [];
+ for(let i=0; i<=5; i++)
+    numeros.push(parseInt(prompt("introduce un numero")))
+//mostrar por consolla
+    console.log(numeros);    
+//mostrar en el cuerpo de la página
+monstraArray(numeros)
+
+//ordenar y mostrar
+numeros.sort(function(a,b){return a*-b});
+monstraArray(numeros, ' ordenados')
+
+//invertir y mostrar
+
+numeros.reverse()
+monstraArray(numeros,' revertido');
+//contar elementos de la array
+
+document.write("<h1> El array tiene: "+numeros.length+" elementos");
+//Busqueda
+
+var busqueda = parseInt(prompt("Busca un numero",0));
+
+var posicion = numeros.findIndex(numero => numero == busqueda);
+
+if(posicion && posicion != -1){
+    document.write("<hr/><h1>ENCONTRADO</h1>");
+    document.write("<h1>Posiscion de la busqueda"+posicion+"</h1><hr/>")
+}else{
+    document.write("<hr/><h1>NO Encontrado<h1><hr/>")
+}
+</script>
+
+
+
+
+</body>
+</html>

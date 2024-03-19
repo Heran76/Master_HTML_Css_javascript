@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_3</title>
+    <style>
+        body{
+            height: 100vh;
+             margin: 200px auto;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(228, 224, 224);
+            color:grey;
+            font-size: 1.5em;
+
+
+            
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        /*
+         hacer un programa que muestre los números entre dos números introducidos 
+         por el usuario
+        */
+
+        var num1 = parseInt(prompt("introduce un número",0));
+        var num2 = parseInt(prompt("introduce un número",0));
+        document.write("<h2> Del "+num1+" a "+num2+" están estos numeros:<br></h2>")
+        for(var i = num1; i<=num2; i++){
+              document.write(i+"<br>");
+        }
+       
+    </script>
+</body>
+</html>

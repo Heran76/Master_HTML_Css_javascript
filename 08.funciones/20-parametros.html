@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parametros Rest y Spred</title>
+</head>
+<body>
+<script>
+    //Parametros Rest y Spread
+
+    function listadofruta(fruta1,Fruta2, ...resto_de_frutas){
+        console.log("fruta1: ", fruta1);
+        console.log("fruta 2 :",Fruta2);
+        console.log(resto_de_frutas) //numero de parametros idifinidos se guardan dentro de un array
+    }
+    listadofruta("Manzana","Naranja", "Melocolton","sandia")
+    var frutas = ["Coco","Piña"];
+    listadofruta(...frutas,"uva","kiwi","Mandarinas")//spred los tres puntos muestra el liado
+</script>
+</body>
+</html>

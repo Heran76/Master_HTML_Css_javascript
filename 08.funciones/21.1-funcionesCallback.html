@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones Callback</title>
+</head>
+<body>
+    <script>
+  // una funcion de callback es otra funcion que se pasa como parametro
+   function sumame(numero1, numero2, sumaYmuestra, sumaPordDos){
+    var sumar = numero1+numero2
+    sumaYmuestra(sumar);
+    sumaPordDos(sumar);
+    return sumar;
+   }
+
+   sumame(5,7,function(dato){
+    console.log("la suma es ", dato);
+   },
+   function(dato){
+    console.log("La suma por dos es",(dato*2))
+   });
+    </script>
+</body>
+</html>

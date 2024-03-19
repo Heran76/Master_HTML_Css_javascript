@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiciones operadores lógicos</title>
+</head>
+<body>
+    <script>
+        /*
+        // Operadores lógicos
+        AND(Y) : &&
+        OR(o): ||
+        Negación: !
+       */ 
+       //Negacion
+       var year = 2008;
+       if (year != 2024){
+        console.log("El año es 2024 el año es "+year)
+       }
+       
+       // AND
+
+       if(year >= 2000 && year <=2020 && year !=2018){
+        console.log("estamos en el era actual")
+       }else{
+        console.log("estas en la era post moderna")
+       }
+
+       //OR
+
+       if(year == 2008 || year == 2018){
+        console.log("El año acaba en 8");
+       }
+    </script>
+</body>
+</html>
