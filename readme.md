@@ -15,6 +15,5 @@
 - Para cualquier problema o sugerencia, no dudes en contactar.
 -Profesor Victor Robles
 
-¡Disfruta explorando el menú animado!
 
-git 
+
